@@ -66,6 +66,12 @@ button:disabled { opacity: .5; cursor: not-allowed; }
 .modal-body input { width: 100%; padding: 9px; border: 1px solid var(--border); border-radius: 8px; }
 .modal-actions { display: flex; justify-content: flex-end; gap: 8px; }
 
+.picker-list { max-height: 260px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; }
+.picker-item { display: block; width: 100%; text-align: left; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; background: #fff; padding: 10px 12px; font-size: 14px; cursor: pointer; }
+.picker-item:last-child { border-bottom: 0; }
+.picker-item:hover, .picker-item:focus-visible { background: #eff4ff; }
+.picker-empty { padding: 14px; text-align: center; color: var(--muted); font-size: 13px; }
+
 @media (prefers-reduced-motion: reduce) {
   .card, .card:hover, .modal, .modal-overlay, .sidebar { transition: none; }
   .card:hover { transform: none; }
